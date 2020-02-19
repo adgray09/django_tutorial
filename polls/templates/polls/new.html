@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+
+<form method='POST'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Send the new question to the server!">
+</form>
